@@ -1,0 +1,288 @@
+* {
+  font-family: sans-serif;
+  line-height: 1.614em;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  margin-top: 3em;
+  background-image: url(./images/back\ ground.jpg);
+}
+
+header,
+main,
+footer {
+  margin: auto;
+  max-width: 800px;
+}
+
+header {
+  padding: 2em 0;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+.aboutMe li {
+  display: inline-block;
+  text-align: left;
+}
+
+header span {
+  font-size: 1.5em;
+  color: #999;
+}
+
+#navLeft {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 50%;
+  gap: 5em;
+  display: flex;
+  flex-flow: row;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-content: left;
+  background: #333;
+}
+
+#navRight {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 1.5em;
+  width: 50%;
+  gap: 5em;
+  display: flex;
+  flex-flow: row;
+  justify-content: right;
+  background: #333;
+}
+
+nav a {
+  padding: 0em 2em;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav a:hover {
+  display: block;
+  background: #666;
+  height: 1.5em;
+}
+
+.nav1 {
+  display: flex;
+  grid-row-start: auto;
+  justify-content: left;
+}
+
+.navHome {
+  border: 2px solid #f76707;
+  border-radius: 7px;
+  background-color: #fff4e6;
+}
+
+.navAboutMe {
+  border: 2px solid #f76707;
+  border-radius: 7px;
+  background-color: #fff4e6;
+}
+
+.navProjects {
+  border: 2px solid #f76707;
+  border-radius: 7px;
+  background-color: #fff4e6;
+}
+
+nav a:hover {
+  background: #666;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.nav1 img {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.matt {
+  color: #fff;
+}
+
+#aboutMe {
+  display: grid;
+  grid-template-columns:25em 15em;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 7px;
+  background-color: #fff4e6;
+  gap: 5em;
+}
+.body {
+  gap: 5px;
+  border: 2px solid #000000;
+  border-radius: 7px;
+  background-color: #ccc;
+}
+
+#aboutMe a:hover {
+  background: #666;
+  color: #fff;
+  border-radius: 7px;
+}
+
+#socials {
+  height: 25em;
+  width: 15em;
+  display: grid;
+  grid-template-rows: repeat(3 3em);
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 7px;
+  background-color: #666;
+  transition: transform 0.2s;
+}
+
+.github {
+  border: 2px solid #f76707;
+  border-radius: 7px;
+  background-color: #fff4e6;
+}
+.github:hover {
+  background: #fff4e6;
+  color: #fff;
+  border-radius: 7px;
+  transform: scale(1.5);
+}
+
+.linkedin {
+  border: 2px solid #f76707;
+  border-radius: 7px;
+  background-color: #fff4e6;
+}
+
+.linkedin:hover {
+  background: #fff4e6;
+  color: #fff;
+  border-radius: 7px;
+  transform: scale(1.5);
+}
+
+#aboutMe img {
+  border: 1px solid #f76707;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+  background-color: #fff4e6;
+}
+
+#aboutMe p img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  width: 50px;
+}
+
+section {
+  margin: 1em 0;
+  padding-top: 3em;
+  min-height: 20em;
+}
+
+section > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body ul {
+  display: inline-block;
+  text-align: left;
+}
+
+#myProjects {
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  background-color: #fff4e6;
+}
+
+#projects {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 0.5em;
+}
+
+#projects article {
+  background: #ccc;
+  padding: 1em;
+}
+
+#projects article img {
+  width: 10em;
+  padding: 0 2em;
+}
+
+#projects img {
+  padding: 1px;
+  width: 100px;
+  height: 100px;
+  transition: transform .2s;
+}
+
+.projectA:hover {
+  transform: scale(1.1);
+  border: solid 1px #000;
+}
+
+.projectB:hover {
+  transform: scale(1.1);
+  border: solid 1px #000;
+}
+
+.projectC:hover {
+  transform: scale(1.1);
+  border: solid 1px #000;
+}
+
+#myProjects {
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: #666;
+  color: #fe8f1f;
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 2px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fe8f1f;
+}
+
+footer ul {
+  display: inline-block;
+  text-align: left;
+}
